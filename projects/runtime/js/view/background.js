@@ -56,9 +56,9 @@ var background = function (window) {
             background.addChild(moon);
             // TODO: 5 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             var building;
-            for(var i=0;i<5;++i){
+            for(var i=0;i<7;++i){
                 var buildingHeight = 300 * Math.random() + 100;
-                building = draw.rect(75,buildingHeight,'lightGray','black',1);
+                building = draw.rect(75,buildingHeight,'#566D7E','black',1);
                 building.x = 200*i;
                 building.y = groundY-buildingHeight;
                 background.addChild(building);
@@ -67,7 +67,7 @@ var background = function (window) {
             // TODO 4: Part 1 - Add a tree
             tree = draw.bitmap('img/tree.png');
             tree.x = 500;
-            tree.y = 220;
+            tree.y = 240;
             background.addChild(tree);
             
         } // end of render function - DO NOT DELETE

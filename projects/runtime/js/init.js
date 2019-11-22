@@ -79,8 +79,8 @@ var init = function (window) {
       
     
     // TODO 6 : create game manager
-
-
+    var game = opspark.createGameManager(app,hud);
+    opspark.runLevelInGame(game);
 };
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
